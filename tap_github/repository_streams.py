@@ -318,7 +318,7 @@ class ReadmeStream(GitHubRestStream):
         th.Property("html_url", th.StringType),
         th.Property("download_url", th.StringType),
         th.Property(
-            "_links",
+            "__links",
             th.ObjectType(
                 th.Property("git", th.StringType),
                 th.Property("self", th.StringType),
@@ -1430,7 +1430,7 @@ class ReviewsStream(GitHubRestStream):
         th.Property("html_url", th.StringType),
         th.Property("pull_request_url", th.StringType),
         th.Property(
-            "_links",
+            "__links",
             th.ObjectType(
                 th.Property("html", th.ObjectType(th.Property("href", th.StringType))),
                 th.Property(
@@ -1477,7 +1477,7 @@ class ReviewCommentsStream(GitHubRestStream):
         th.Property("pull_request_url", th.StringType),
         th.Property("author_association", th.StringType),
         th.Property(
-            "_links",
+            "__links",
             th.ObjectType(
                 th.Property("self", th.ObjectType(th.Property("href", th.StringType))),
                 th.Property("html", th.ObjectType(th.Property("href", th.StringType))),
