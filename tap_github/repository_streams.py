@@ -499,7 +499,7 @@ class EventsStream(GitHubRestStream):
         th.Property("org", th.StringType),
         th.Property("repo_id", th.IntegerType),
         th.Property("public", th.BooleanType),
-        th.Property("_sdc_repository", th.StringType),
+        th.Property("__sdc_repository", th.StringType),
         th.Property("created_at", th.DateTimeType),
         th.Property("distinct_size", th.IntegerType),
         th.Property("head", th.StringType),
